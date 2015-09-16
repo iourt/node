@@ -4,16 +4,11 @@ var express   = require('express');
 var routes    = require('./routes');
 var sets      = require('./set');
 var appConfig = require("./appConfig").config;
-
-var app = express();
-
-// app.configure(function () {
-//     app.set('views', path.join(__dirname, 'views'));
-// });
+var app       = express();
 
 routes(app);
 
-app.set('views', './views')
+sets(app);
 
 app.listen(appConfig.port);
 
