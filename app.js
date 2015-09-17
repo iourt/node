@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var mysql      = require('mysql');
 // var multer     = require('multer');
 
-var connection = mysql.createConnection(appConfig.mysql);
-connection.connect();
+// var connection = mysql.createConnection(appConfig.mysql);
+// connection.connect();
 
 var app = express();
 
