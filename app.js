@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'controllers')));
 // routes(app);
 app.use('/api', routes);
 
-app.listen(appConfig.port);
+// app.listen(appConfig.port);
 
 console.log("the app server run at port :%d in %s mode. ", appConfig.port, app.settings.env);
 
