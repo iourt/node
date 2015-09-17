@@ -4,7 +4,11 @@ var express    = require('express');
 var routes     = require('./routes');
 var appConfig  = require("./config").config;
 var bodyParser = require('body-parser');
+var mysql      = require('mysql');
 // var multer     = require('multer');
+
+var connection = mysql.createConnection(appConfig.mysql);
+connection.connect();
 
 var app = express();
 

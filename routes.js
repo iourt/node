@@ -18,21 +18,21 @@ router.use(function setheader(req, res, next) {
     if (req.method == "OPTIONS") {
         res.sendStatus(200);
     } else {
-        console.log(req.body);
         var params = req.body;
 
-        if (!params.Header.UserId) {
-            console.log(1);
-            res.json({
-                Response: {
-                    Ack: 'Failure',
-                    State: false,
-                    Time: new Date().getTime()
-                }
-            })
-        } else {
-            next();
-        }
+        // if (!params.Header.UserId) {
+        //     res.json({
+        //         Response: {
+        //             Ack: 'failure',
+        //             State: false,
+        //             Time: new Date().getTime()
+        //         }
+        //     })
+        // } else {
+        //     next();
+        // }
+
+        next();
     }
 });
 
