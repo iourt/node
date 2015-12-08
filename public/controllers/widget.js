@@ -7,15 +7,5 @@ module.exports = {
         };
 
         return obj;
-    },
-
-    /**
-     * 通过类型拿时间
-     */
-    getDate: function (type) {
-        switch (type) {
-            case 'today':
-            break;
-        }
     }
 };
